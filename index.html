@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="polygon-home">
+        <div class="home">
+            <p class="textHome">a selection of products</p>
+            <h1 class="textTitle">special for you</h1>
+            <br>
+            <p class="textHome">All products on this list have been selected for your browsing. Enjoy!</p>
+            <br>
+            <div class="buttonsHome">
+                <button>Meet the Linx</button>
+                <button>Help the algorithm</button>
+                <button>Your products</button>
+                <button>Share</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="informations">
+        <div class="divInformations">
+            <h3>Help the algorithm to be more correct</h3>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem excepturi magnam similique reprehenderit tempore, nulla ipsam vero ut ducimus. Amet perferendis et ea officiis repellendus labore beatae? Sunt, nobis!</p>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste adipisci maiores quidem qui consectetur nostrum repudiandae amet, voluptates dignissimos voluptas modi veniam. Dolorum et, reiciendis tempore excepturi quis atque laborum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem excepturi magnam similique reprehenderit tempore,
+                nulla ipsam vero ut ducimus. Amet perferendis et ea officiis repellendus labore beatae? Sunt, nobis!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem excepturi magnam similique reprehenderit tempore,
+                nulla ipsam vero ut ducimus. Amet perferendis et ea officiis repellendus labore beatae? Sunt, nobis!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem excepturi magnam similique reprehenderit tempore,
+                nulla ipsam vero ut ducimus. Amet perferendis et ea officiis repellendus labore beatae? Sunt, nobis!</p>
+            <br>
+        </div>
+        <div>
+            <form id="formSendinformationsUser" action="" method="post">
+                <div class="divForm">
+                    <div class="title">Welcome</div>
+                    <div class="subtitle">Sign up to receive our promotions!</div>
+                    <div class="input-container ic1 divDisplayBlock ">
+                        <input id="firstname" class="input" type="text" placeholder=" " />
+                        <span class="spanError divDisplayBlock"></span>
+                        <div class="cut"></div>
+                        <label id="span" for="firstname" class="placeholder">First name</label>
+                      
+                    </div>
+                    <div class="input-container ic1 divDisplayBlock divFormSingle">
+                        <input id="lastname" class="input" type="text" placeholder=" " />
+                        <span class="spanError divDisplayBlock"></span>
+                        <div class="cut"></div>
+                        <label for="lastname" class="placeholder">Last name</label>
+                    </div>
+                    <div class="input-container ic1 divDisplayBlock divFormSingle">
+                        <input id="email" class="input" type="text" placeholder=" " />
+                        <span class="spanError divDisplayBlock"></span>
+                        <div class="cut"></div>
+                        <label for="email" class="placeholder">Email</label>
+                    </div>
+                    <div class="input-container ic1 divDisplayBlock divFormSingle">
+                        <input class="divDisplayBlock input" id="cpf" type="number" placeholder=" " >
+                        <span class="spanError divDisplayBlock"></span>
+                        <div class="cut"></div>
+                        <label for="CPF" class="placeholder">CPF</label>
+                    </div>
+                    <br>
+                    <div class="divGender divFormSingle">
+                        <div class="subDivGender">
+                            <input id="male" name="gender" type="radio" value="male" checked>
+                            <label for="">Male</label>
+                        </div>
+                        <div class="subDivGender">
+                            <input id="female" name="gender" type="radio" value="female">
+                            <label for="">Female</label>
+                        </div>
+                    </div>
+                    
+                    <button  class="buttonSendInformationsUser" type="text" class="submit">Send</button>
+
+                    
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <br>
+    <div class="subTitles">
+        <div class="line"></div>
+        <h3>Your selection special</h3>
+        <div class="line"></div>
+    </div>
+    <br>
+
+    <div id="products" class="products">
+
+    </div>
+    <div class="divButtonNextPage">
+        <button id="buttonNextPage" onclick="callAPI_Products()" type="submit">Show more products</button>
+    </div>
+    <br><br>
+    <div class="subTitles">
+        <div class="line"></div>
+        <h3>Share the news</h3>
+        <div class="line"></div>
+    </div>
+        
+
+    <br>
+
+    <p>Want your friends to get their personalized list too? fill it now!</p>
+    <br><br>
+
+    <div class="divSendForFriend">
+            <form id="formSendFriendData" action="" method="post">
+                <div class="divFormSendForFriend">
+                    <div class="input-container ic1 divDisplayBlock sendForfriend">
+                        <input class=" input" id="inputNameFriend" type="text" placeholder=" ">
+                        <span class="spanError divDisplayBlock"></span>
+                        <div class="cut" style="width: 170px;"></div>
+                        <label for="Name" class="placeholder">Name your friend:</label>
+                    </div>
+                    <div class="input-container ic1 divDisplayBlock sendForfriend">
+                        <input class=" input" id="inputEmailFriend" type="email" placeholder=" ">
+                        <span class="spanError divDisplayBlock"></span>
+                        <div class="cut" style="width: 170px;"></div>
+                        <label for="E-mail" class="placeholder">E-mail your friend:</label>
+                    </div>
+                </div>
+                <br>
+                <div class="divbuttonSendFriendData" style="padding-top: 40px;">
+                    <button id="buttonSendFriendData"  type="submit">Send now</button>
+                </div>
+            </form>
+    </div>
+    <br>
+    <div id="snackbar">Data sent successfully!</div>
+    <div class="geometricFigureFooter"></div>
+    <footer>Testing your habilitys of HTML, CSS and JS. <br> Linx impulse <br>2022</footer>
+
+
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>

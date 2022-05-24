@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica';
+}
+h1{
+    font-size: 34px;
+}
+h3 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+p {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+form {
+    text-align: left;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+button {
+    width: 200px;
+    height: 50px;
+    margin: 15px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ffffff 0%, #4d01a3 30%);
+    box-shadow: 8px 4px 8px 0 rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 4px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: 0;
+        
+}
+button:hover{
+    opacity: 0.8;
+    background: linear-gradient(45deg, #ffffff 0%, #4d01a3 30%);
+    font-weight: bold;
+    box-shadow: none;
+}
+footer {
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    background-color: #ffffff ;
+    background: linear-gradient(45deg, #ffffff  10%, #4d01a3 70%);
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+    text-align: center;
+    letter-spacing: 0px;
+    font-weight: bold;
+    opacity: 1;
+    width: 100%;
+}
+.polygon-home {
+    width: 100%;
+    height: 60vh;
+    background-color: #ffffff;
+    background: linear-gradient(45deg, #ffffff 10%, #4d01a3 100%);
+    clip-path: polygon(0 0, 100% 0%, 260% 35%, 0 88%);
+}
+.home {
+    width: 100%;
+    margin-bottom: 30px;
+    opacity: 1;
+    padding: 10px;
+}
+.textTitle {
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.textHome {
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.buttonsHome, .subTitles, .divButtonNextPage, .divSendForFriend, .divbuttonSendFriendData {
+    text-align: center;
+}
+.informations {
+    display: flex;
+    padding: 15px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+}
+.title {
+    color: rgb(68, 68, 68);
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.subtitle {
+    color: rgb(68, 68, 68);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+.ic1 {
+    margin-top: 40px;
+}
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+.cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 90px;
+}
+.input:focus~.cut,
+.input:not(:placeholder-shown)~.cut {
+    transform: translateY(8px);
+}
+.placeholder {
+    color: #ffffff;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+    color: #ffffff;
+}
+
+.input:focus~.placeholder {
+    color: crimson;
+}
+.divInformations{
+    margin: 0 20px;
+}
+.divForm {
+    justify-content: center;
+    box-shadow: 0 4px 18px 0 rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 15px;
+}
+.divDisplayBlock {
+    display: block !important;
+}
+.divGender {
+    display: flex;
+}
+.subDivGender {
+    padding-right: 10px;
+}
+.line {
+    width: 20%;
+    border: 1px solid #000000;
+    margin: 3px;
+    display: inline-block;
+}
+.divFormSendForFriend {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.sendForfriend {
+    margin: 10px;
+    display: grid;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.inputError{
+    border: 3px solid red;
+}
+.spanError{
+    color: red;
+    font-weight: bold;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content:center ;
+}
+.card {
+    box-shadow: 0 14px 18px 0 rgb(0, 0, 0);
+    max-width: 300px;
+    margin: 10px 30px;
+    text-align: center;
+    font-family: arial;
+    padding: 20px;
+}
+.price {
+    font-size: 22px;
+    padding: 5px;
+}
+s {
+    color: red;
+}
+.boldPrice {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 26px;
+}
+.newPrice {
+    color: green;
+    font-weight: bold;
+}
+.card button {
+    border: none;
+    box-shadow: 8px 4px 8px 0 rgb(0, 0, 0);
+    outline: 0;
+    padding: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ffffff 0%, #4d01a3 30%);
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    font-weight: bold;
+    background: linear-gradient(45deg, #8357b4f8 0%, #4d01a3 100%);
+    box-shadow: none;
+}
+#snackbar {
+    visibility: hidden;
+    box-shadow: 0px 4px 16px #000000;
+    padding-left: 1rem;
+    color: #ffffff;
+    background: linear-gradient(45deg, #97fcab 0%, #004b0f 100%);
+    border-radius: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 26px;
+    position: fixed;
+    z-index: 1;
+    bottom: 110px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+.divFormSingle{
+    margin-top: 80px;
+}
+
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 873px) {
+    .polygon-home {
+        height: 80vh;
+    }
+    .divFormSendForFriend {
+        width: 100%;
+    }
+}
+
+@media (max-width: 445px) {
+    h3{
+        font-size: 20px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    p {
+        font-size: 14px;
+        flex-wrap: wrap;
+        margin: 0 auto;    
+    }
+    input {
+        margin: 0 auto;
+    }
+    .polygon-home {
+        height: 130vh;
+    }
+    .informations, .divFormSendForFriend {
+        display:block;
+    }
+    .divForm {
+        margin: 20px 20px;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .buttonSendInformationsUser{
+        width: 80%;
+    }
+    .sendForfriend {
+        margin-top: 60px;
+    }
+
+}
+@media (max-width: 397px) {
+    .polygon-home {
+        height: 150vh;
+        width: 100%;
+    }
+    .informations {
+        margin: 0;
+    }
+    .divForm {
+        margin-left: 0 auto;
+        text-align: left;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sendForfriend {
+        margin-top: 100px;
+    }
+}
